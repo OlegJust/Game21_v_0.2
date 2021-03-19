@@ -15,7 +15,7 @@ const options = {
     }
 }
 const io = createSocket(server, options);
-createRoutes(app)
+createRoutes(app, io)
 
 const PORT = config.get('port') || 5000
 

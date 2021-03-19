@@ -1,6 +1,6 @@
 module.exports = {
     playrooms: {
-			room: { users: { OlegPV: [Array] }, messages: [] }
+			room: { users: ["OlegPV"], messages: [{text: "Hello world", userName:"admin"}] }
 		}
 }
 

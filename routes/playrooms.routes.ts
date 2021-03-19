@@ -12,8 +12,6 @@ router.post(
     try {
       const {roomId} = req.body
       if (!playrooms[roomId]) {
-				console.log(playrooms)
-				// console.log(playrooms.has(roomId))
 				const data = {
 					users: {},
           messages: [],
@@ -52,4 +50,4 @@ router.get('/', auth, async (req: express.Request, res: express.Response) => {
   }
 })
 
-module.exports = router
+export default router
